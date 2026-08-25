@@ -4,10 +4,11 @@
         <attribute name="name" value="calculadora_cientifica"/>
         <attribute name="authors" value="JOAOGABRIELDACRUZ"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-08-25 08:06:52 "/>
+        <attribute name="saved" value="2026-08-25 08:52:04 "/>
         <attribute name="created" value="Sk9BT0dBQlJJRUxEQUNSVVo7REYwMS1MQUIwMi0zMzsyMDI2LTA4LTIxOyIwODoxNzowNiAiOzMxODY="/>
         <attribute name="edited" value="Sk9BT0dBQlJJRUxEQUNSVVo7REYwMS1MQUIwMi0zMzsyMDI2LTA4LTIxOyIxMToxMTo1NCAiOzM7MzI4Nw=="/>
         <attribute name="edited" value="bGVvbmE7REVTS1RPUC00S0VBME1COzIwMjYtMDgtMjU7IjA4OjA2OjUyICI7MjsyODcy"/>
+        <attribute name="edited" value="UEVEUk9TT0hOREVBTU9SSU07REYwMS1MQUIwMS0xNTsyMDI2LTA4LTI1OyIwODo1MjowNCAiOzE7MzMxOA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -81,11 +82,21 @@
                                                     <else>
                                                         <if expression="opcao==6">
                                                             <then>
-                                                                <output expression="&quot;Digite o valor da base.&quot;" newline="True"/>
+                                                                <output expression="&quot;Digite o valor do raio.&quot;" newline="True"/>
+                                                                <input variable="r"/>
+                                                                <assign variable="a" expression="PI*r^2"/>
+                                                                <output expression="&quot;&#193;rea = &quot;&amp;a" newline="True"/>
                                                             </then>
                                                             <else>
                                                                 <if expression="opcao==7">
-                                                                    <then/>
+                                                                    <then>
+                                                                        <output expression="&quot;Digite o valor da base.&quot;" newline="True"/>
+                                                                        <input variable="b"/>
+                                                                        <output expression="&quot;Digite o valor da altura.&quot;" newline="True"/>
+                                                                        <input variable="h"/>
+                                                                        <assign variable="a" expression="(b*h)/2"/>
+                                                                        <output expression="&quot;&#193;rea=&quot;&amp;a" newline="True"/>
+                                                                    </then>
                                                                     <else>
                                                                         <if expression="opcao==8">
                                                                             <then>
