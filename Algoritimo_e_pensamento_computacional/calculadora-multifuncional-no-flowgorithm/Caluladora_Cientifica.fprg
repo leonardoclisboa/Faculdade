@@ -4,12 +4,13 @@
         <attribute name="name" value="calculadora_cientifica"/>
         <attribute name="authors" value="JOAOGABRIELDACRUZ"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-08-25 09:59:04 "/>
+        <attribute name="saved" value="2026-08-25 11:03:37 "/>
         <attribute name="created" value="Sk9BT0dBQlJJRUxEQUNSVVo7REYwMS1MQUIwMi0zMzsyMDI2LTA4LTIxOyIwODoxNzowNiAiOzMxODY="/>
         <attribute name="edited" value="Sk9BT0dBQlJJRUxEQUNSVVo7REYwMS1MQUIwMi0zMzsyMDI2LTA4LTIxOyIxMToxMTo1NCAiOzM7MzI4Nw=="/>
-        <attribute name="edited" value="bGVvbmE7REVTS1RPUC00S0VBME1COzIwMjYtMDgtMjU7IjA4OjA2OjUyICI7MjsyODcy"/>
         <attribute name="edited" value="UEVEUk9TT0hOREVBTU9SSU07REYwMS1MQUIwMS0xNTsyMDI2LTA4LTI1OyIwODo1MjowNCAiOzE7MzMxOA=="/>
         <attribute name="edited" value="Sk9BT0dBQlJJRUxEQUNSVVo7REYwMS1MQUIwMS0xNjsyMDI2LTA4LTI1OyIwOTo1OTowNCAiOzE7MzMwMw=="/>
+        <attribute name="edited" value="R1VTVEFWT0hFTlJJO0RGMDEtTEFCMDEtMjE7MjAyNi0wOC0yNTsiMTE6MDA6MjIgIjsxOzI5NDk="/>
+        <attribute name="edited" value="bGVvbmE7REVTS1RPUC00S0VBME1COzIwMjYtMDgtMjU7IjExOjAzOjM3ICI7MzsyODY3"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -120,7 +121,16 @@
                                                                                     </then>
                                                                                     <else>
                                                                                         <if expression="opcao==10">
-                                                                                            <then/>
+                                                                                            <then>
+                                                                                                <output expression="&quot;Digite o primeiro n&#250;mero.&quot;" newline="True"/>
+                                                                                                <input variable="n1"/>
+                                                                                                <output expression="&quot;Digite o segundo n&#250;mero.&quot;" newline="True"/>
+                                                                                                <input variable="n2"/>
+                                                                                                <output expression="&quot;Digite o terceiro n&#250;mero.&quot;" newline="True"/>
+                                                                                                <input variable="n3"/>
+                                                                                                <assign variable="r" expression="n1+n2+n3/3"/>
+                                                                                                <output expression="&quot;M&#233;dia: &quot;&amp;r" newline="True"/>
+                                                                                            </then>
                                                                                             <else/>
                                                                                         </if>
                                                                                     </else>
