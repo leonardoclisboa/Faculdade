@@ -14,6 +14,4 @@ Os arquivos estão organizados por disciplinas. Sinta-se à vontade para explora
 * [Desenvolvimento Front-end](./Desenvolvimento_Front-End)
 * [Modelagem de Banco de Dados](./Modelagem_de_Banco_de_Dados)
 
-*(Adicione os próximos semestres conforme avança no curso)*
-
 ---
