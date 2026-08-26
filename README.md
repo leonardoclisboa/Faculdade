@@ -1,3 +1,3 @@
-# Algoritmos e Pensamento Computacional
+# Faculdade
 
-Repositorio destinado a matéria, Algoritmos e Pensamento Computacional.
+Repositorio destinado as matérias da Faculdade.
