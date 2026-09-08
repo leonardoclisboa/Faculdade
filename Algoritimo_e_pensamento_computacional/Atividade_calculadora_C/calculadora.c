@@ -1,10 +1,5 @@
-#include <stdio.h> // Biblioteca padrao para operacoes de entrada e saida[cite: 3]
+#include <stdio.h>          
 
-// ==========================================
-// PROTOTIPOS DAS FUNCOES[cite: 4]
-// ==========================================
-
-// Minhas 10 operacoes (Implementadas baseadas na aula)
 void adicao();
 void subtracao();
 void multiplicacao();
@@ -15,8 +10,6 @@ void conversao_temperatura();
 void consumo_combustivel();
 void tabuada();
 void par_ou_impar();
-
-// 10 operacoes da equipe (Para implementar)
 void operacao_11();
 void operacao_12();
 void operacao_13();
@@ -28,13 +21,10 @@ void operacao_18();
 void operacao_19();
 void operacao_20();
 
-// ==========================================
-// FUNCAO PRINCIPAL (Ponto de partida)[cite: 3, 4]
-// ==========================================
 int main() {
     int opcao;
 
-    do { // Repete enquanto a condicao for verdadeira[cite: 4]
+    do { // Repete enquanto a condicao for verdadeira
         printf("============= CALCULADORA =============\n");
         printf("1.  Adicao\n");
         printf("2.  Subtracao\n");
@@ -46,7 +36,6 @@ int main() {
         printf("8.  Consumo de Combustivel (km/l)\n");
         printf("9.  Tabuada (1 a 10)\n");
         printf("10. Par ou Impar\n");
-        printf("-----------------------------------------\n");
         printf("11. Operacao 11 (A FAZER)\n");
         printf("12. Operacao 12 (A FAZER)\n");
         printf("13. Operacao 13 (A FAZER)\n");
@@ -56,14 +45,12 @@ int main() {
         printf("17. Operacao 17 (A FAZER)\n");
         printf("18. Operacao 18 (A FAZER)\n");
         printf("19. Operacao 19 (A FAZER)\n");
-        printf("20. Operacao 20 (A FAZER)\n");
-        printf("-----------------------------------------\n");
         printf("0.  Sair\n");
         printf("=========================================\n");
         printf("Escolha uma operacao: ");
-        scanf("%d", &opcao); // O '&' envia o endereco da variavel para o scanf[cite: 3]
+        scanf("%d", &opcao); 
 
-        switch(opcao) { // Escolhe um caso com base no valor da variavel[cite: 4]
+        switch(opcao) { 
             case 1: adicao(); break;
             case 2: subtracao(); break;
             case 3: multiplicacao(); break;
