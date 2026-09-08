@@ -82,7 +82,7 @@ int main() {
         }
     } while(opcao != 0);
 
-    return 0; // Indica que o programa terminou com sucesso[cite: 3, 4]
+    return 0; // Indica que o programa terminou com sucesso
 }
 
 
