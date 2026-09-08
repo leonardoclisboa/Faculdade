@@ -190,7 +190,6 @@ void par_ou_impar() {
     }
 }
 
-
 void operacao_11() {
     printf("\nOperacao 11 ainda nao implementada.\n");
 }
