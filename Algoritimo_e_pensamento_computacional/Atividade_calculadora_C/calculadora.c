@@ -103,7 +103,7 @@ void adicao() {
     float a, b;
     printf("\nDigite dois numeros: ");
     scanf("%f %f", &a, &b);
-    printf("Resultado: %.2f\n", a + b); // %.2f controla a quantidade de casas decimais[cite: 3]
+    printf("Resultado: %.2f\n", a + b); 
 }
 
 void subtracao() {
@@ -117,14 +117,14 @@ void multiplicacao() {
     float a, b;
     printf("\nDigite dois numeros para multiplicar: ");
     scanf("%f %f", &a, &b);
-    printf("Resultado: %.2f\n", a * b); // Multiplicacao adiciona um numero a ele mesmo varias vezes[cite: 2]
+    printf("Resultado: %.2f\n", a * b); 
 }
 
 void divisao() {
     float a, b;
     printf("\nDigite o dividendo e o divisor: ");
     scanf("%f %f", &a, &b);
-    if (b == 0) { // Toma decisao com base em uma condicao verdadeira ou falsa[cite: 4]
+    if (b == 0) { 
         printf("Erro: Divisao por zero!\n");
     } else {
         printf("Resultado: %.2f\n", a / b);
@@ -132,7 +132,7 @@ void divisao() {
 }
 
 void resto_divisao() {
-    int a, b; // O modulo e usado para verificar paridade, ciclos e condicoes com inteiros[cite: 2]
+    int a, b; 
     printf("\nDigite dois numeros inteiros para o resto: ");
     scanf("%d %d", &a, &b);
     if (b == 0) {
@@ -146,7 +146,7 @@ void media_tres_notas() {
     float n1, n2, n3, media;
     printf("\nDigite as tres notas: ");
     scanf("%f %f %f", &n1, &n2, &n3);
-    media = (n1 + n2 + n3) / 3.0; // Uso de parenteses para resolver a adicao antes da divisao[cite: 2]
+    media = (n1 + n2 + n3) / 3.0; 
     printf("A media final e: %.2f\n", media); 
 }
 
@@ -154,7 +154,7 @@ void conversao_temperatura() {
     float c, f;
     printf("\nDigite a temperatura em Celsius: ");
     scanf("%f", &c);
-    f = (c * 9.0 / 5.0) + 32.0; // Formula de conversao respeitando a ordem de prioridade[cite: 2]
+    f = (c * 9.0 / 5.0) + 32.0; 
     printf("Temperatura em Fahrenheit: %.2f\n", f);
 }
 
@@ -163,7 +163,7 @@ void consumo_combustivel() {
     printf("\nDigite a distancia (km) e o combustivel (litros): ");
     scanf("%f %f", &d, &c);
     if(c > 0) {
-        consumo = d / c; // Calculo do consumo medio D / C[cite: 2]
+        consumo = d / c; 
         printf("Consumo medio: %.2f km/l\n", consumo);
     } else {
         printf("Erro: Combustivel deve ser maior que zero.\n");
@@ -174,7 +174,7 @@ void tabuada() {
     int n, i;
     printf("\nDigite um numero inteiro para ver a tabuada: ");
     scanf("%d", &n);
-    for (i = 1; i <= 10; i++) { // For e otimo quando sabemos exatamente quantas vezes repetir[cite: 4]
+    for (i = 1; i <= 10; i++) { 
         printf("%d x %d = %d\n", n, i, n * i);
     }
 }
@@ -183,7 +183,7 @@ void par_ou_impar() {
     int n;
     printf("\nDigite um numero inteiro: ");
     scanf("%d", &n);
-    if (n % 2 == 0) { // O modulo verifica se e par ou impar[cite: 2, 4]
+    if (n % 2 == 0) { 
         printf("O numero %d e PAR.\n", n);
     } else {
         printf("O numero %d e IMPAR.\n", n);
