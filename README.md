@@ -12,13 +12,13 @@ O principal objetivo deste repositório é documentar a minha evolução técnic
 
 Os arquivos estão divididos e organizados pelas disciplinas cursadas. Sinta-se à vontade para explorar os diretórios abaixo:
 
-* 🧠 **[Algoritmo e Pensamento Computacional](./Algoritimo_e_pensamento_computacional)**
+* 🧠 **Algoritmo e Pensamento Computacional**
   > Fundamentos de lógica de programação, estruturas de controle e resolução de problemas.
 
-* 🌐 **[Desenvolvimento Front-end](./Desenvolvimento_Front-End)**
+* 🌐 **Desenvolvimento Front-end**
   > Projetos e práticas voltadas para a criação de interfaces web.
 
-* 🗄️ **[Modelagem de Banco de Dados](./Modelagem_de_Banco_de_Dados)**
+* 🗄️ **Modelagem de Banco de Dados**
   > Diagramas de entidade-relacionamento, estruturação de dados e scripts SQL.
 
 ---
