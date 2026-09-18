@@ -1,0 +1,17 @@
+-- 	Criando um novo banco de dados
+CREATE DATABASE BD_ACADEMICO1;
+
+-- instanciando 
+USE BD_ACADEMICO1;
+
+-- Criando a Tabela Curso
+CREATE TABLE CURSO
+(
+	co_curso	int		not null,
+    nome		varchar(40) null
+);
+-- esqueci de incluir a chave-primária
+-- então iremos alterar esta table
+-- uma restrição (constraint) de primary key 
+alter table CURSO add constraint primary key (co_curso);
+
