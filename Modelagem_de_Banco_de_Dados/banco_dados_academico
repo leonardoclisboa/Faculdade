@@ -1,8 +1,8 @@
 -- 	Criando um novo banco de dados
-CREATE DATABASE BD_ACADEMICO1;
+CREATE DATABASE BD_ACADEMICO;
 
 -- instanciando 
-USE BD_ACADEMICO1;
+USE BD_ACADEMICO;
 
 -- Criando a Tabela Curso
 CREATE TABLE CURSO
@@ -26,10 +26,14 @@ create table TURMA
     dt_inicial	datetime	null,
     dt_final	datetime	null,
     num_provas 	int			null,
-    cod_curso  	int			null -- chave estrangeira 
+    co_curso  	int			null -- chave estrangeira 
 );
 
 -- adicionando uma restrição (constraint) de primary key
 alter table TURMA add constraint PK_CURSO
  primary key (co_turma);
+ 
+ -- relacionando esta tabela TURMA com a tabela CURSO
+ alter table TURMA add constraint FK_TURMA_CURSO
+ foreign key (co_curso) references CURSO(co_curso);
 
