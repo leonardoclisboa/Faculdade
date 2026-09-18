@@ -13,5 +13,23 @@ CREATE TABLE CURSO
 -- esqueci de incluir a chave-primária
 -- então iremos alterar esta table
 -- uma restrição (constraint) de primary key 
-alter table CURSO add constraint primary key (co_curso);
+alter table CURSO add constraint PK_CURSO
+ primary key (co_curso);
+
+-- criando a tabela TURMA
+create table TURMA
+(
+	co_turma	char(11)	not null,
+    ano			char(4)		null,
+    periodo		char(1)		null,
+    descricao	char(50)	null,
+    dt_inicial	datetime	null,
+    dt_final	datetime	null,
+    num_provas 	int			null,
+    cod_curso  	int			null -- chave estrangeira 
+);
+
+-- adicionando uma restrição (constraint) de primary key
+alter table TURMA add constraint PK_CURSO
+ primary key (co_turma);
 
