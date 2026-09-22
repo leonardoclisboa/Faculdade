@@ -1,8 +1,8 @@
 -- 	Criando um novo banco de dados
-CREATE DATABASE BD_ACADEMICO1;
+CREATE DATABASE BD_ACADEMICO;
 
 -- instanciando 
-USE BD_ACADEMICO1;
+USE BD_ACADEMICO;
 
 -- Criando a Tabela Curso
 CREATE TABLE CURSO
@@ -26,10 +26,47 @@ create table TURMA
     dt_inicial	datetime	null,
     dt_final	datetime	null,
     num_provas 	int			null,
-    cod_curso  	int			null -- chave estrangeira 
+    co_curso  	int			null -- chave estrangeira 
 );
 
 -- adicionando uma restrição (constraint) de primary key
-alter table TURMA add constraint PK_CURSO
+alter table TURMA add constraint PK_TURMA
  primary key (co_turma);
+ 
+ -- relacionando esta tabela TURMA com a tabela CURSO
+ alter table TURMA add constraint FK_TURMA_CURSO
+ foreign key (co_curso) references CURSO(co_curso);
+ 
+ -- criando a tabela ALUNO
+ create table ALUNO
+ (
+	co_aluno			int				not null,
+    dt_nascimento		datetime		null,
+    sg_sexo				char(1)			null,
+    nome				varchar(20)		null,
+    co_estadocivil		char(1)			null,
+    no_pai				varchar(70)		null,
+    no_mae				varchar(70)		null
+ )
+ 
+-- alterando a TABELA ALUNO acrescentando a PRIMARY KEY
+alter table ALUNO add constraint PK_ALUNO 
+primary key (co_aluno);
+ 
+ -- Criando a tabela associativa ALUNOS_TURMA
+ create table ALUNO_TURMA
+ (
+	co_aluno			int			not null,
+    co_turma			char(11) 	not null,
+    dt_matricula		datetime	null,
+    dt_cancelamento		datetime 	null
+ );
+ -- agora iremos adicionar uma chave-primaria composta
+alter table ALUNO_TURMA add constraint PK_AT
+primary key (co_aluno, co_turma);
+
+-- relaciondo com a tabela TURMA
+alter table ALUNO_TURMA add constraint FK_AT_TURMA
+foreign key (co_turma) references TURMA(co_turma);
+
 
