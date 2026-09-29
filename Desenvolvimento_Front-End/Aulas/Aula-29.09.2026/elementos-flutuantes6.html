@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Elementos flutuantes</title>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+        /* pra variar vamos aplicar internal estilos */
+
+        .conteudo-zero {
+            background: red;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+        }
+
+        .conteudo {
+            background: #00ccff;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+
+            /* agora os elementos irão
+            flutuar encaixados à direita */
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo-zero">
+        Conteúdo 0
+    </div>
+    <div class="conteudo">
+        Conteúdo1
+    </div>
+    <div class="conteudo">
+        Conteúdo2
+    </div>
+    <div class="conteudo">
+        Conteúdo3
+    </div>
+</body>
+</html>

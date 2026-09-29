@@ -1,0 +1,22 @@
+/* Modelo de caixa */
+
+.conteudo {
+    border: 1px solid red; /*borda da caixa*/
+
+    /*padding-top: 20px;    /* espaçamento superior dentro da caixa*/
+    /*padding-left: 20px;   /* espaçamento lateral à esquerda dentro da caixa*/
+    /*padding-right: 20px;  /* espaçamento lateral à direita dentro da caixa*/
+    /*padding-bottom: 20px; /* espaçamento lateral à esquerda dentro da caixa*/
+
+    /* podemos também inserir os quatro espaçamentos internos como parâmetros
+       começando pelo topo, no sentido horário */
+    /*padding: 20px 15px 10px 5px;
+
+    /* espaçamento igual nos quatro cantos internos*/
+    /*padding: 20px;
+
+    /* espaçamento igual no topo e bottom e 5px nas laterais esquerda e direita*/
+    padding: 20px 5px;
+
+    width: 150px; /*largura da caixa*/
+}
