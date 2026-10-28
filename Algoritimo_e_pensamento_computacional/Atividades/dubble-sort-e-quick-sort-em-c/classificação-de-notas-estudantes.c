@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+// Função para imprimir o array de notas
+void imprimirNotas(float arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%.1f ", arr[i]);
+    }
+    printf("\n");
+}
+
+// Função para copiar um array (preserva o original)
+void copiarArray(float origem[], float destino[], int n) {
+    for (int i = 0; i < n; i++) {
+        destino[i] = origem[i];
+    }
+}
