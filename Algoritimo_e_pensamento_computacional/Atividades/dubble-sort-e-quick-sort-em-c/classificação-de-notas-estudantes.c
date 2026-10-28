@@ -14,3 +14,18 @@ void copiarArray(float origem[], float destino[], int n) {
         destino[i] = origem[i];
     }
 }
+
+//duble Sort (decresente)
+void bubbleSort(float arr[], int n) {
+    float temp;
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            // Ordem decrescente: se o atual for menor que o próximo, troca
+            if (arr[j] < arr[j + 1]) {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
