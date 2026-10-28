@@ -38,6 +38,6 @@ Como o objetivo é classificar os estudantes da maior nota para a menor, a lógi
 
 ## 7. Estrutura dos Arquivos do Projeto
 O repositório é composto pelos seguintes arquivos:
-*   `classificação-de-notas-estudantes.c`: Arquivo contendo o código-fonte principal, com a implementação interativa (`scanf`) e a lógica completa dos algoritmos.
+*   `classificação-de-notas-estudantes.c`: Arquivo contendo o código-fonte principal.
 *   `README.md`: Este arquivo, contendo a documentação e instruções do projeto.
 *   `Pasta de evidencias`: Fotos com rodas de testes.
